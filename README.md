@@ -3,5 +3,9 @@ Hal yang harus dilakukan :
 2. install panda
 3. install flask
 
+Untuk run, kalian bisa CTRL + ` / buka terminal kalian di vscode 
+python app.py
+
+atau kalian bisa menggunakan extension untuk run python code
 
 By : Muhammad Habib Abdillah (PRO FREE FIRE)
