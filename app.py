@@ -4,8 +4,7 @@ from sklearn.tree import DecisionTreeClassifier
 
 app = Flask(__name__)
 
-# Load the pre-trained model
-data = pd.read_csv('Database Holiday Mate (1).csv')
+data = pd.read_csv('Database Holiday Mate_New.csv')
 X = data[['City', 'Countryside', 'Seaside', 'Riverside', 'Mountains', 'Hotel', 'Hostel', 'Camping', 'Train', 'Train + Bike', 'Bus', 'Explore Nature', 'Food', 'Culture', 'Party', 'Relaxing', 'Active Holiday']]
 y = data[['HolidayPlace', 'Description', 'Picture']]
 

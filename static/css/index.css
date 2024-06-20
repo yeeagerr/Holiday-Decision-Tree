@@ -1,0 +1,266 @@
+*,
+html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "GTflexa", Helvetica, Arial, sans-serif;
+  background-color: #bdc4b3;
+}
+
+nav {
+  background: #bdc4b3;
+  position: fixed;
+  top: 0;
+}
+
+.collapse {
+  background-color: #a4ad98;
+  border-radius: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.collapse a {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.judul {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.judul h1 {
+  text-align: center;
+  font-size: 60px;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+
+.judul .button a {
+  border: 1px solid black;
+  padding: 20px 40px;
+  border-radius: 10px;
+  margin: 10px;
+  text-decoration: none;
+  transition: 0.4s ease-in-out;
+  color: black;
+}
+
+.judul .button a:nth-child(1) {
+  background-color: black;
+  color: white;
+}
+
+.judul .button a:nth-child(1):hover {
+  background: none;
+  color: black;
+}
+.judul .button a:nth-child(2):hover {
+  background: black;
+  color: white;
+}
+
+/* hero 1 */
+.hero-1 {
+  width: 100%;
+  height: 100vh;
+  background-color: #a4ad98;
+  padding: 40px;
+  border-radius: 20px;
+  margin-bottom: 30px;
+}
+
+.hero-1 .row {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.hero-1 .foto {
+  background-color: #eae2d4;
+  border-radius: 10px;
+}
+
+.hero-1 .foto img {
+  width: 100%;
+  height: 700px;
+  padding: 15px 0;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.hero-1 .isi .icons {
+  width: 100%;
+}
+
+.hero-1 .isi .icons .isi-icons {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 20px 0;
+  border-bottom: 2px dashed black;
+  gap: 30px;
+  padding: 10px 0;
+}
+
+.hero-1 .isi .icons .isi-icons i {
+  font-size: 30px;
+  padding: 10px;
+  background-color: #eae2d4;
+  border-radius: 50%;
+}
+
+/* hero 2 */
+.hero-2 {
+  width: 100%;
+  height: 100vh;
+  background-color: #a4ad98;
+  padding: 40px;
+  border-radius: 20px;
+}
+
+.hero-2 .quest {
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px;
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.hero-2 .button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.hero-2 .button button {
+  border: none;
+  padding: 10px 50px;
+  border-radius: 10px;
+}
+
+.hero-2 .row {
+  background-color: #eae2d4;
+  width: 100%;
+  padding: 10px;
+  border-radius: 15px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 25px;
+}
+
+.hero-2 .row .desc {
+  text-align: center;
+}
+
+.hero-2 .row .desc p {
+  border-bottom: 2px dashed black;
+  padding: 80px 0;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+.hero-2 .row .desc span {
+  opacity: 0.7;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+}
+
+.hero-2 .foto img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+@media only screen and (max-width: 988px) {
+  .hero-1 .isi h1 {
+    font-size: 30px;
+  }
+
+  .hero-1 .foto img {
+    height: 400px;
+  }
+
+  .hero-2 .foto img {
+    height: 400px;
+  }
+
+  .hero-1 .isi .icons .isi-icons {
+    margin: 5px 0;
+    padding: 5px 0;
+  }
+}
+
+@media only screen and (max-width: 510px) {
+  .hero-1 .isi p {
+    font-size: 12px;
+  }
+
+  .hero-1 .foto img {
+    height: 250px;
+  }
+  .hero-2 .foto img {
+    height: 250px;
+  }
+
+  .hero-1 .isi .icons .isi-icons i {
+    font-size: 20px;
+  }
+
+  .hero-2 .row .desc p {
+    font-size: 10px;
+    padding: 20px 0;
+  }
+
+  .hero-2 .row .desc span {
+    font-size: 8px;
+    letter-spacing: 7px;
+  }
+
+  .hero-2 .quest {
+    padding: 7px;
+    font-size: 12px;
+  }
+
+  .hero-2 .button button {
+    padding: 5px 50px;
+    font-size: 12px;
+  }
+
+  .hero-2 .row {
+    margin-top: 10px;
+  }
+}
+
+@media only screen and (max-width: 435px) {
+  .judul .button a {
+    padding: 20px 10px;
+  }
+}
